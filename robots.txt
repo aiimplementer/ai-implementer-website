@@ -1,0 +1,13 @@
+# robots.txt for https://ai-freelancer.netlify.app/
+
+User-agent: *
+Allow: /
+
+# Optional: Block access to non-public folders (only if they exist)
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /drafts/
+Disallow: /assets/
+
+# Sitemap location (important for SEO)
+Sitemap: https://ai-freelancer.netlify.app/sitemap.xml
