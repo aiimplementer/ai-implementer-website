@@ -2,4 +2,4 @@
 /posts   /posts/blog.html   200
 /blog    /posts/blog.html   200
 /blogs   /posts/blog.html   200
-/*  https://ai-freelancer.netlify.app/:splat  301!
+/*  https://ai-implementer.netlify.app/:splat  301!
