@@ -7,7 +7,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /tmp/
 Disallow: /drafts/
-Disallow: /assets/
 
 # Sitemap location (important for SEO)
 Sitemap: https://ai-freelancer.netlify.app/sitemap.xml
