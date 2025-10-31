@@ -10,8 +10,7 @@
   <meta content="AI Freelancer helping small businesses streamline processes with AI-driven automation, chatbots, and workflow solutions." name="description"/>
   <meta content="AI Freelancer, AI Partner, Small Business Automation, Chatbots, Workflow Automation, AI Solutions" name="keywords"/>
   <meta content="Shekhar D" name="author"/>
-  
-  <!-- ✅ Structured Data for SEO -->
+
   <script type="application/ld+json">
 	{
 	  "@context": "https://schema.org",
@@ -29,38 +28,49 @@
 			"@type": "SearchAction",
 			"target": "https://ai-freelancer.netlify.app/?s={search_term_string}",
 			"query-input": "required name=search_term_string"
-		  }
+		  },
+		  "inLanguage": "en"
 		},
 		{
 		  "@type": "Organization",
 		  "@id": "https://ai-freelancer.netlify.app/#organization",
 		  "name": "AI Freelancer",
 		  "url": "https://ai-freelancer.netlify.app/",
-		  "logo": "https://ai-freelancer.netlify.app/images/ai-implementer-logo.jpg",
+		  "logo": {
+			"@type": "ImageObject",
+			"url": "https://ai-freelancer.netlify.app/images/ai-implementer-logo.jpg"
+		  },
 		  "sameAs": [
 			"https://www.linkedin.com/company/ai-implementer/",
 			"https://x.com/ai-implementer"
 		  ],
-		  "contactPoint": {
-			"@type": "ContactPoint",
-			"email": "ai.implementer@gmail.com",
-			"contactType": "Customer Support",
-			"availableLanguage": "English"
-		  }
+		  "contactPoint": [
+			{
+			  "@type": "ContactPoint",
+			  "email": "ai.implementer@gmail.com",
+			  "contactType": "Customer Support",
+			  "availableLanguage": "English"
+			}
+		  ]
 		},
 		{
-		  "@type": "LocalBusiness",
-		  "@id": "https://ai-freelancer.netlify.app/#localbusiness",
+		  "@type": "ProfessionalService",
+		  "@id": "https://ai-freelancer.netlify.app/#business",
 		  "name": "AI Freelancer",
 		  "image": "https://ai-freelancer.netlify.app/images/ai-implementer-logo.jpg",
 		  "url": "https://ai-freelancer.netlify.app/",
 		  "email": "ai.implementer@gmail.com",
 		  "priceRange": "$",
-		  "description": "AI Freelancer provides affordable AI automation services for small businesses — from workflow automation to customer support bots."
+		  "description": "AI Freelancer provides affordable AI automation services for small businesses — from workflow automation to customer support bots.",
+		  "serviceType": "AI Automation, Workflow Automation, Chatbot Solutions",
+		  "areaServed": {
+			"@type": "GeoShape",
+			"circle": "0 0 10000000"
+		  }
 		}
 	  ]
 	}
-	</script>
+  </script>
 
 
   <!-- Tailwind CSS -->
