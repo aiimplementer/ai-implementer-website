@@ -20,7 +20,7 @@
 		  "@id": "https://ai-freelancer.netlify.app/#website",
 		  "url": "https://ai-freelancer.netlify.app/",
 		  "name": "AI Freelancer",
-		  "description": "AI Freelancer helps small businesses automate workflows, customer support, and daily operations with low-cost AI solutions.",
+		  "description": "AI Freelancer helps small businesses automate workflows, customer support, and operations using affordable AI solutions.",
 		  "publisher": {
 			"@id": "https://ai-freelancer.netlify.app/#organization"
 		  },
@@ -38,18 +38,20 @@
 		  "url": "https://ai-freelancer.netlify.app/",
 		  "logo": {
 			"@type": "ImageObject",
-			"url": "https://ai-freelancer.netlify.app/images/ai-implementer-logo.jpg"
+			"url": "https://ai-freelancer.netlify.app/images/ai-implementer-logo.jpg",
+			"width": 512,
+			"height": 512
 		  },
 		  "sameAs": [
-			"https://www.linkedin.com/company/ai-implementer/",
-			"https://x.com/ai-implementer"
+			"https://x.com/ai-implementer",
+			"https://www.linkedin.com/company/ai-implementer/"
 		  ],
 		  "contactPoint": [
 			{
 			  "@type": "ContactPoint",
 			  "email": "ai.implementer@gmail.com",
 			  "contactType": "Customer Support",
-			  "availableLanguage": "English"
+			  "availableLanguage": ["English"]
 			}
 		  ]
 		},
@@ -61,11 +63,42 @@
 		  "url": "https://ai-freelancer.netlify.app/",
 		  "email": "ai.implementer@gmail.com",
 		  "priceRange": "$",
-		  "description": "AI Freelancer provides affordable AI automation services for small businesses — from workflow automation to customer support bots.",
-		  "serviceType": "AI Automation, Workflow Automation, Chatbot Solutions",
+		  "description": "AI Freelancer provides affordable AI automation services for small businesses — workflow automation, chatbots, and AI-driven tools.",
+		  "serviceType": ["AI Automation", "Workflow Automation", "Customer Support Automation"],
 		  "areaServed": {
 			"@type": "GeoShape",
 			"circle": "0 0 10000000"
+		  },
+		  "address": {
+			"@type": "PostalAddress",
+			"addressCountry": "India"
+		  },
+		  "hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "AI Services",
+			"itemListElement": [
+			  {
+				"@type": "Offer",
+				"itemOffered": {
+				  "@type": "Service",
+				  "name": "AI Workflow Automation"
+				}
+			  },
+			  {
+				"@type": "Offer",
+				"itemOffered": {
+				  "@type": "Service",
+				  "name": "Customer Support Automation"
+				}
+			  },
+			  {
+				"@type": "Offer",
+				"itemOffered": {
+				  "@type": "Service",
+				  "name": "AI Chatbot Setup"
+				}
+			  }
+			]
 		  }
 		}
 	  ]
