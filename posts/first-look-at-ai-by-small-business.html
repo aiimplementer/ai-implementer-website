@@ -49,6 +49,9 @@
 }
 </script>
 
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest">
+</script>
 
 <!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -72,20 +75,55 @@ article p { margin-bottom: 1rem; }
 <!-- Sticky Header -->
 <header class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 py-5 shadow-md fixed top-0 left-0 right-0 z-50">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between relative">
+    
+    <!-- Left: Logo -->
     <a href="https://ai-freelancer.netlify.app/" class="flex items-center space-x-3">
-      <img src="https://ai-freelancer.netlify.app/images/ai-implementer-logo.jpg" alt="AI Freelancer Logo" class="w-10 h-10 object-contain rounded-full">
+      <img src="https://ai-freelancer.netlify.app/images/ai-implementer-logo.jpg" 
+           alt="AI Freelancer Logo" 
+           class="w-10 h-10 object-contain rounded-full">
       <h1 class="text-2xl font-bold text-cyan-400">AI Freelancer</h1>
     </a>
+
+    <!-- Center: Title -->
     <h2 class="absolute left-1/2 transform -translate-x-1/2 text-xl md:text-2xl font-semibold text-white tracking-wide">
       Blogs
     </h2>
-    <nav>
-      <a href="https://ai-freelancer.netlify.app/posts/blog.html" class="text-cyan-400 font-medium hover:text-cyan-300 transition">
-        Home
+
+    <!-- Right: Navigation Links & Icons -->
+    <nav class="flex items-center space-x-5">  
+	  <!-- Home icon -->
+      <a href="https://ai-freelancer.netlify.app/posts/blog.html" 
+         alt="Home" 
+         title="Blog Home" 
+         class="hover:opacity-90 transition">
+        <i data-lucide="Home" class="w-6 h-6 text-cyan-400 hover:text-cyan-300"></i>
+      </a>
+
+      <!-- Website icon -->
+      <a href="https://ai-freelancer.netlify.app/" 
+         alt="Website" 
+         title="Visit Website" 
+         target="_blank" 
+         class="hover:opacity-90 transition">
+        <i data-lucide="globe" class="w-6 h-6 text-cyan-400 hover:text-cyan-300"></i>
+      </a>
+
+      <!-- LinkedIn icon -->
+      <a href="https://www.linkedin.com/company/ai-implementer/?viewAsMember=true" 
+         alt="LinkedIn" 
+         title="Visit LinkedIn" 
+         target="_blank" 
+         class="hover:opacity-90 transition">
+        <i data-lucide="linkedin" class="w-6 h-6 text-cyan-400 hover:text-cyan-300"></i>
       </a>
     </nav>
   </div>
 </header>
+<!-- Initialize Lucide Icons -->
+<script>
+  lucide.createIcons();
+</script>
+
 
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-center py-20 px-3 pt-32 border-b border-gray-700">
